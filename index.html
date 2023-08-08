@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .content {
+            display: flex;
+            gap: 20px;
+        }
+
+        .play {
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-color: #cdebf6;
+            border: 1px solid #a3c8d5;
+            border-radius: 50%;
+            outline: none;
+
+            cursor: pointer;
+            transition: .15s;
+        }
+
+        .play:hover {
+            background-color: #a3c8d5;
+        }
+
+        .progress-container {
+            width: 50%;
+            height: 22px;
+            padding: 4px;
+
+            display: flex;
+
+
+            background-color: #cdebf6;
+            border: 1px solid #a3c8d5;
+            border-radius: 8px;
+        }
+
+        .progress-bar {
+            /* width: 100px; */
+            background-color: #a3c8d5;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <audio class="audio" src="./Marshmello – Keep It Mello (feat. Omar Linx).mp3" controls></audio>
+
+    <div class="content">
+        <button class="play">▶</button>
+        <div class="progress-container">
+            <div class="progress-bar"></div>
+        </div>
+    </div>
+
+    
+
+    <script src="./script.js"></script>
+</body>
+</html>
